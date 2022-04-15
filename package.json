@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start:zookeeper": "cd zookeeper-bin && bin/zkServer.sh start",
+    "connect:zookeeper": "cd zookeeper-bin && bin/zkCli.sh -server 127.0.0.1:2181",
+    "start:client": "node server.js"
+  },
+  "dependencies": {
+    "zookeeper": "^5.3.2"
+  }
+}
